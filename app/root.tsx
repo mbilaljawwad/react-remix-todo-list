@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import styles from './styles/app.css';
+import styles from "./styles/app.css";
 import {
   Links,
   LiveReload,
@@ -10,7 +10,18 @@ import {
 } from "@remix-run/react";
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    {
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
+      crossorigin: true,
+    },
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap",
+    },
+  ];
 }
 
 export const meta: MetaFunction = () => ({

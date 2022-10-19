@@ -1,5 +1,10 @@
 /*! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com*/
 @tailwind base;
+@layer base {
+  body {
+    @apply font-main;
+  }
+}
 @tailwind components;
 @tailwind utilities;
 
@@ -7,6 +12,7 @@
   box-sizing:border-box;
   border:0 solid #e5e7eb
 }
+
 
 :after,:before{
   --tw-content:""

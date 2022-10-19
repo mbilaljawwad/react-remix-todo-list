@@ -410,6 +410,10 @@ video {
   height: auto;
 }
 
+body {
+  font-family: "Source Sans Pro";
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -504,18 +508,48 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
-  font-weight: 700;
+  font-weight: 600;
+}
+
+.font-light {
+  font-weight: 200;
+}
+
+.font-extra-bold {
+  font-weight: 900;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-teal-600 {
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.text-teal-200 {
+  --tw-text-opacity: 1;
+  color: rgb(153 246 228 / var(--tw-text-opacity));
 }
 
 *,:after,:before{
