@@ -15,7 +15,7 @@ export function links() {
     {
       rel: "preconnect",
       href: "https://fonts.googleapis.com",
-      crossorigin: true,
+      crossOrigin: "true",
     },
     {
       rel: "stylesheet",

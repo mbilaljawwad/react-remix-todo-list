@@ -1,4 +1,7 @@
-export const parameters = {
+import "../styles/app.css";
+import decorators from "./decorators";
+
+const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
@@ -6,4 +9,6 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};
+
+export { parameters, decorators };
