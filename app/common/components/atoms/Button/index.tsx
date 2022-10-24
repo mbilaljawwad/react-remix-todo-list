@@ -7,7 +7,17 @@ export type ButtonProps = HTMLProps<HTMLButtonElement> & {
 };
 
 const Button: FC<ButtonProps> = ({ children, variant = "default" }) => {
-  return <button className={classnames(variant)}>{children}</button>;
+  return (
+    <button
+      disabled={variant === "disabled"}
+      className={classnames("btn", variant)}
+      onClick={() => {
+        alert("Not Disabled");
+      }}
+    >
+      {children}
+    </button>
+  );
 };
 
 export default Button;
