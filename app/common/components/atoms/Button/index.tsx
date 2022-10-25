@@ -4,16 +4,21 @@ import classnames from "classnames";
 export type ButtonProps = HTMLProps<HTMLButtonElement> & {
   children: ReactNode;
   variant?: string;
+  type?: "button" | "submit" | "reset" | undefined;
 };
 
-const Button: FC<ButtonProps> = ({ children, variant = "default" }) => {
+const Button: FC<ButtonProps> = ({
+  children,
+  variant = "default",
+  type = "button",
+  ...props
+}) => {
   return (
     <button
+      {...props}
+      type={type}
       disabled={variant === "disabled"}
       className={classnames("btn", variant)}
-      onClick={() => {
-        alert("Not Disabled");
-      }}
     >
       {children}
     </button>
