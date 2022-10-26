@@ -3,7 +3,7 @@ import type { FieldProps } from ".";
 import type { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "Molecules/Field",
+  title: "Common/Molecules/Field",
   component: Field,
   decorators: [(story) => <div style={{ maxWidth: 300 }}>{story()}</div>],
 } as Meta;

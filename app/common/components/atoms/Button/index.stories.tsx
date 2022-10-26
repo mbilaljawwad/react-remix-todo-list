@@ -3,7 +3,7 @@ import type { ButtonProps } from ".";
 import type { Meta, Story } from "@storybook/react";
 
 export default {
-  title: "Atom/Button",
+  title: "Common/Atom/Button",
   component: Button,
   decorators: [(story) => <div style={{ maxWidth: 300 }}>{story()}</div>],
 } as Meta;

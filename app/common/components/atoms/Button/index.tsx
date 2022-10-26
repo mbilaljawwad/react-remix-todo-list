@@ -10,7 +10,7 @@ export type ButtonProps = HTMLProps<HTMLButtonElement> & {
 const Button: FC<ButtonProps> = ({
   children,
   variant = "default",
-  type = "button",
+  type,
   ...props
 }) => {
   return (
